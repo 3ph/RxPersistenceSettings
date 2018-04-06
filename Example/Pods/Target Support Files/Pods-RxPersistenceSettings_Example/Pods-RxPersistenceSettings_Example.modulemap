@@ -1,0 +1,6 @@
+framework module Pods_RxPersistenceSettings_Example {
+  umbrella header "Pods-RxPersistenceSettings_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

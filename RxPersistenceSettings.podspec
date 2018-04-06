@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxPersistenceSettings'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of RxPersistenceSettings.'
 
 # This description is used to generate tags and improve search results.
@@ -32,11 +32,14 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'RxPersistenceSettings/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'RxPersistenceSettings' => ['RxPersistenceSettings/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxCocoa', '~> 4.1.2'
+  
+  s.subspec 'Core' do |sp|
+      sp.source_files = 'Classes/Core'
+  end
+  
+  s.subspec 'UserDefaults' do |sp|
+      sp.dependency 'RxPersistenceSettings/Core'
+      sp.source_files = 'Classes/UserDefaults'
+  end
 end

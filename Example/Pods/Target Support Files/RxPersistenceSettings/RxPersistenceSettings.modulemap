@@ -1,0 +1,6 @@
+framework module RxPersistenceSettings {
+  umbrella header "RxPersistenceSettings-umbrella.h"
+
+  export *
+  module * { export * }
+}

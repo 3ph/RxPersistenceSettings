@@ -1,0 +1,35 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxPersistenceSettings (0.0.1):
+    - RxCocoa (~> 4.1.2)
+    - RxPersistenceSettings/Core (= 0.0.1)
+    - RxPersistenceSettings/UserDefaults (= 0.0.1)
+  - RxPersistenceSettings/Core (0.0.1):
+    - RxCocoa (~> 4.1.2)
+  - RxPersistenceSettings/UserDefaults (0.0.1):
+    - RxCocoa (~> 4.1.2)
+    - RxPersistenceSettings/Core
+  - RxSwift (4.1.2)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - RxPersistenceSettings (from `../`)
+
+EXTERNAL SOURCES:
+  RxPersistenceSettings:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxPersistenceSettings: a8c1684b87a3b43331be173624f5061be99bfc1e
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+
+PODFILE CHECKSUM: cdfb5d41a496477ca4b163754183eb4f249849b8
+
+COCOAPODS: 1.4.0

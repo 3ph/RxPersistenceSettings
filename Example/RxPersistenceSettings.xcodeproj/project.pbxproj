@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C367384120762F4200EDC7D0 /* UserDefaultsSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C367384020762F4200EDC7D0 /* UserDefaultsSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06A553CA2190AEE0D570526D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		0911E6D7D59C2739C903DCFF /* RxPersistenceSettings.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxPersistenceSettings.podspec; path = ../RxPersistenceSettings.podspec; sourceTree = "<group>"; };
-		280C3C3826ED15CDF8BF6A32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		06A553CA2190AEE0D570526D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0911E6D7D59C2739C903DCFF /* RxPersistenceSettings.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxPersistenceSettings.podspec; path = ../RxPersistenceSettings.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		280C3C3826ED15CDF8BF6A32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4798F7C2F6B9757910DB9A06 /* Pods-RxPersistenceSettings_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPersistenceSettings_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPersistenceSettings_Example/Pods-RxPersistenceSettings_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxPersistenceSettings_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxPersistenceSettings_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		66400CA53523E2B72EB610DC /* Pods_RxPersistenceSettings_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPersistenceSettings_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2A8D207B1A80B7C59AB610 /* Pods-RxPersistenceSettings_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPersistenceSettings_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPersistenceSettings_Tests/Pods-RxPersistenceSettings_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		83C5F5E3C323E405B553B150 /* Pods_RxPersistenceSettings_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPersistenceSettings_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C367384020762F4200EDC7D0 /* UserDefaultsSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsSettings.swift; sourceTree = "<group>"; };
 		C5794941EB0B11466B439149 /* Pods-RxPersistenceSettings_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPersistenceSettings_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPersistenceSettings_Tests/Pods-RxPersistenceSettings_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3F1D9A77FB7115F92B55C02 /* Pods-RxPersistenceSettings_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPersistenceSettings_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPersistenceSettings_Example/Pods-RxPersistenceSettings_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +95,7 @@
 		607FACD21AFB9204008FA782 /* Example for RxPersistenceSettings */ = {
 			isa = PBXGroup;
 			children = (
+				C367383F20762DF700EDC7D0 /* Settings */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -146,6 +149,14 @@
 				83C5F5E3C323E405B553B150 /* Pods_RxPersistenceSettings_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C367383F20762DF700EDC7D0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C367384020762F4200EDC7D0 /* UserDefaultsSettings.swift */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 		E4E9C49ADE2095B19EF9D71D /* Pods */ = {
@@ -271,11 +282,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxPersistenceSettings_Example/Pods-RxPersistenceSettings_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxPersistenceSettings/RxPersistenceSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxPersistenceSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -375,6 +390,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C367384120762F4200EDC7D0 /* UserDefaultsSettings.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
