@@ -6,44 +6,38 @@ import RxPersistenceSettings
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
+        describe("Simple UserDefaults test") {
 
-            it("can do maths") {
-                expect(1) == 2
+            let setting = UserDefaultsSetting<Int>(key: "simpleIntSettingKey", defaultValue: 10)
+            it("Default value") {
+                expect(setting.defaultValue) == 10
             }
 
-            it("can read") {
-                expect("number") == "string"
+            it("Update works") {
+                setting.value = 13
+                expect(setting.value) == 13
             }
+        }
 
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
+        describe("Numeric UserDefaults test") {
+            
+            let setting = NumericUserDefaultsSetting<Int>(
+                titleString: "Number of cats",
+                infoString: "This setting holds number of cats",
+                key: "complexIntSettingKey",
+                defaultValue: 1,
+                min: 0,
+                max: 13,
+                step: 1)
+
+            it("Default value") {
+                expect(setting.defaultValue) == 1
             }
             
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+            it("Increase works") {
+                let oldValue = setting.value
+                setting.increase()
+                expect(setting.value) == oldValue + 1
             }
         }
     }
