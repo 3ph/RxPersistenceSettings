@@ -21,16 +21,16 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/3ph/RxPersistenceSettings.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'RxPersistenceSettings/Classes/**/*'
-  
+#  s.source_files = 'RxPersistenceSettings/Classes/**/*'
+
   s.dependency 'RxCocoa', '~> 4.1.2'
-  
+
   s.subspec 'Core' do |sp|
-      sp.source_files = 'Classes/Core'
+      sp.source_files = 'RxPersistenceSettings/Classes/Core/**/*'
   end
-  
+
   s.subspec 'UserDefaults' do |sp|
       sp.dependency 'RxPersistenceSettings/Core'
-      sp.source_files = 'Classes/UserDefaults'
+      sp.source_files = 'RxPersistenceSettings/Classes/UserDefaults/**/*'
   end
 end
