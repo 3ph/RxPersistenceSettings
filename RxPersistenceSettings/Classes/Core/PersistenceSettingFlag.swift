@@ -40,4 +40,9 @@ public extension PersistenceSettingFlag {
         set { value = newValue }
         get { return value }
     }
+    
+    /// Toggle the current flag
+    func toggle() {
+        isSet = !isSet
+    }
 }

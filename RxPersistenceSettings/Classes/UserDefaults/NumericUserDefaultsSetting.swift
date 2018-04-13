@@ -42,17 +42,20 @@ public class NumericUserDefaultsSetting<Type: Numeric & CustomStringConvertible>
 
     override public func increase() {
         if isAtMax == false {
-            value += _step
+            value += step
         }
     }
 
     override public func decrease() {
         if isAtMin == false {
-            value -= _step
+            value -= step
         }
     }
+    
+    /// Increase/decrease step for the setting's value.
+    public var step: Type
 
-    /// Simplified constructor without setting metadata.
+    /// Simplified initializer without setting metadata.
     ///
     /// - Parameters:
     ///   - key: UserDefaults key
@@ -63,11 +66,11 @@ public class NumericUserDefaultsSetting<Type: Numeric & CustomStringConvertible>
     public init(key: String, defaultValue: Type, min: Type, max: Type, step: Type) {
         _min = min
         _max = max
-        _step = step
+        self.step = step
         super.init(key: key, defaultValue: defaultValue)
     }
     
-    /// Full constructor with metadata.
+    /// Full initializer with metadata.
     ///
     /// - Parameters:
     ///   - titleString: Title string for the setting
@@ -80,12 +83,11 @@ public class NumericUserDefaultsSetting<Type: Numeric & CustomStringConvertible>
     public init(titleString: String, infoString: String, key: String, defaultValue: Type, min: Type, max: Type, step: Type) {
         _min = min
         _max = max
-        _step = step
+        self.step = step
         super.init(titleString: titleString, infoString: infoString, key: key, defaultValue: defaultValue)
     }
 
     // MARK: - Private
     fileprivate let _min: Type  /// Minimal allowed value for the setting.
     fileprivate let _max: Type  /// Maximal allowed value for the setting.
-    fileprivate let _step: Type /// Increase/decrease step for the setting's value.
 }

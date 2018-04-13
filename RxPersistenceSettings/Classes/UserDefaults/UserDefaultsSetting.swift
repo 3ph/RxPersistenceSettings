@@ -69,7 +69,7 @@ public class UserDefaultsSetting<Type: CustomStringConvertible>: UserDefaultsSet
         return "\(value)"
     }
 
-    /// Simplified constructor without setting metadata.
+    /// Simplified initializer without setting metadata.
     ///
     /// - Parameters:
     ///   - key: UserDefaults key
@@ -79,7 +79,7 @@ public class UserDefaultsSetting<Type: CustomStringConvertible>: UserDefaultsSet
         _defaultValue = defaultValue
     }
     
-    /// Full constructor with metadata.
+    /// Full initializer with metadata.
     ///
     /// - Parameters:
     ///   - titleString: Title string for the setting
