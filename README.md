@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/RxPersistenceSettings.svg?style=flat)](http://cocoapods.org/pods/RxPersistenceSettings)
 [![License](https://img.shields.io/cocoapods/l/RxPersistenceSettings.svg?style=flat)](http://cocoapods.org/pods/RxPersistenceSettings)
 [![Platform](https://img.shields.io/cocoapods/p/RxPersistenceSettings.svg?style=flat)](http://cocoapods.org/pods/RxPersistenceSettings)
+![Swift](https://img.shields.io/badge/in-swift4.2-orange.svg)
 
 The goal of this library is to provide generic protocol for basic operations with any persisted setting regardless of persistence store used. You can also add some metadata to the setting (like name and description).
 
@@ -157,7 +158,7 @@ let numericSetting = NumericUserDefaultsSetting<Int>(
     min: 0,
     max: 13,
     step: 1))
-    
+
 numericSetting.increase()
 // value = 2
 

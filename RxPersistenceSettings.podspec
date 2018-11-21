@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxPersistenceSettings'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '.'
   s.description      = <<-DESC
   Set of generic protocols for persisted settings with metadata, observable changes, etc. Currently implemented for UserDefaults.
@@ -20,10 +20,11 @@ Pod::Spec.new do |s|
   s.author           = { 'Tomas Friml' => 'instantni.med@gmail.com' }
   s.source           = { :git => 'https://github.com/3ph/RxPersistenceSettings.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
+  s.swift_version    = '4.2'
 
 #  s.source_files = 'RxPersistenceSettings/Classes/**/*'
 
-  s.dependency 'RxCocoa', '~> 4.1.2'
+  s.dependency 'RxCocoa', '~> 4.4.0'
 
   s.subspec 'Core' do |sp|
       sp.source_files = 'RxPersistenceSettings/Classes/Core/**/*'
