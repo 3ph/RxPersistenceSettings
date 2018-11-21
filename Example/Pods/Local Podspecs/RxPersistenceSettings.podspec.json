@@ -1,6 +1,6 @@
 {
   "name": "RxPersistenceSettings",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": ".",
   "description": "Set of generic protocols for persisted settings with metadata, observable changes, etc. Currently implemented for UserDefaults.",
   "homepage": "https://github.com/3ph/RxPersistenceSettings",
@@ -13,14 +13,15 @@
   },
   "source": {
     "git": "https://github.com/3ph/RxPersistenceSettings.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "swift_version": "4.2",
   "dependencies": {
     "RxCocoa": [
-      "~> 4.1.2"
+      "~> 4.4.0"
     ]
   },
   "subspecs": [

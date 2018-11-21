@@ -2,23 +2,23 @@ PODS:
   - Nimble (7.3.1)
   - Quick (1.3.2)
   - RxAtomic (4.4.0)
-  - RxCocoa (4.1.2):
+  - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
-  - RxPersistenceSettings (0.0.1):
-    - RxCocoa (~> 4.1.2)
-    - RxPersistenceSettings/Core (= 0.0.1)
-    - RxPersistenceSettings/UserDefaults (= 0.0.1)
-  - RxPersistenceSettings/Core (0.0.1):
-    - RxCocoa (~> 4.1.2)
-  - RxPersistenceSettings/UserDefaults (0.0.1):
-    - RxCocoa (~> 4.1.2)
+  - RxPersistenceSettings (0.0.2):
+    - RxCocoa (~> 4.4.0)
+    - RxPersistenceSettings/Core (= 0.0.2)
+    - RxPersistenceSettings/UserDefaults (= 0.0.2)
+  - RxPersistenceSettings/Core (0.0.2):
+    - RxCocoa (~> 4.4.0)
+  - RxPersistenceSettings/UserDefaults (0.0.2):
+    - RxCocoa (~> 4.4.0)
     - RxPersistenceSettings/Core
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
   - Nimble
-  - Quick
+  - Quick (~> 1.3.2)
   - RxPersistenceSettings (from `../`)
 
 SPEC REPOS:
@@ -37,10 +37,10 @@ SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxPersistenceSettings: 0893fccb8d6d023341b08a7446d17725a8bbe3c3
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxPersistenceSettings: 37c332ae5f06dc9e885816ab5d134f3f99496ba7
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: acbb1159a70c9477f5bc199584eff01e713f9724
+PODFILE CHECKSUM: dce89869907130a727de926a350822baa15816a4
 
 COCOAPODS: 1.5.3
