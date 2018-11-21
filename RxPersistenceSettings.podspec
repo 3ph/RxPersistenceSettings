@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
 #  s.source_files = 'RxPersistenceSettings/Classes/**/*'
 
-  s.dependency 'RxCocoa', '~> 4.1.2'
+  s.dependency 'RxCocoa', '~> 4.4.0'
 
   s.subspec 'Core' do |sp|
       sp.source_files = 'RxPersistenceSettings/Classes/Core/**/*'
